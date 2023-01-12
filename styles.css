@@ -1,13 +1,47 @@
-*{
-    padding: 0;
-    margin: 20px;
+:root {
+    --primary-color: #0a2028;
+    --secondary-color:#4c1d95;
 }
 
-
 body{
+    font-family: sans-serif;
+    font-size: large;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+h1{
+    padding: 1rem;
+    margin: 2rem;
     text-align: center;
-    background-color: brown;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+}
+
+input, label {
+    display: block;
+} 
+input {
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+#check {
+    display: block;
+    cursor: pointer;
+    color: white;
+    margin-top: 1rem;
+    margin: auto;
+    background: var(--primary-color);
+    border-color: #4c1d95;
+    border-width: 0.2rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+#text {
+    font-size: larger;
 }
